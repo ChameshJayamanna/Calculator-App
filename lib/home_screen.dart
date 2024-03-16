@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget resultWidget() {
     return Container(
-      color: Colors.white,
+      color: Color.fromARGB(255, 47, 47, 47),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -66,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
               userInput,
               style: TextStyle(
                 fontSize: 32,
+                color: Color.fromARGB(255, 245, 244, 244),
               ),
             ),
           ),
@@ -77,6 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(
                 fontSize: 48,
                 fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 245, 244, 244),
               ),
             ),
           ),
@@ -88,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget buttonWidget() {
     return Container(
       padding: EdgeInsets.all(10),
-      color: Color.fromARGB(66, 233, 232, 232),
+      color: Color.fromARGB(255, 47, 47, 47),
       child: GridView.builder(
         itemCount: buttonList.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -111,12 +113,12 @@ class _HomeScreenState extends State<HomeScreen> {
         text == "C" ||
         text == "(" ||
         text == ")") {
-      return Colors.redAccent;
+      return Color.fromARGB(255, 61, 244, 25);
     }
     if (text == "=" || text == "AC") {
       return Colors.white;
     }
-    return Colors.indigo;
+    return const Color.fromARGB(255, 248, 248, 249);
   }
 
   getBgColor(String text) {
@@ -124,9 +126,9 @@ class _HomeScreenState extends State<HomeScreen> {
       return Colors.redAccent;
     }
     if (text == "=") {
-      return Color.fromARGB(255, 104, 204, 159);
+      return Color.fromARGB(255, 61, 244, 25);
     }
-    return Colors.white;
+    return const Color.fromARGB(255, 15, 15, 15);
   }
 
   Widget button(String text) {
