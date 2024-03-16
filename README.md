@@ -14,3 +14,18 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Calculator App
+Basic Calculator App using Flutter framework
+
+## INFO
+A library for parsing and evaluating mathematical expressions was used for this application : math_expressions: ^2.4.0
+
+## IMAGES
+
+
+
+
+
+
+
